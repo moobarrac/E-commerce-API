@@ -35,8 +35,6 @@ app.use(helmet());
 app.use(xss());
 app.use(mongoSanitize());
 app.use(cors());
-
-app.use(morgan("tiny"));
 app.use(express.json());
 app.use(cookieParser(process.env.JWT_SECRET));
 
